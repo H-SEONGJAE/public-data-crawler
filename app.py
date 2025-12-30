@@ -63,30 +63,31 @@ if st.button("🚀 설정 파일 생성"):
 
         st.success("설정 파일 생성 완료")
 
-st.divider()
-st.markdown("### 📦 크롤러 프로그램 다운로드")
+    st.divider()
+    st.markdown("### 📦 크롤러 프로그램 다운로드")
 
-st.markdown("""
+    st.markdown("""
 아래 버튼을 눌러 크롤러 프로그램을 다운로드하세요.
 (설치 없이 바로 실행 가능합니다)
 """)
 
-st.link_button(
+    st.link_button(
     "⬇️ 크롤러 ZIP 다운로드",
     "https://github.com/H-SEONGJAE/public-data-crawler/releases/download/v1.0/data_crawler_v1.0.zip"
 )
 
-        st.markdown("""
+    st.markdown("""
 ### 📥 다음 단계 안내
 1️⃣ **config.json 파일 다운로드**  
 2️⃣ `data_crawler_v1.0 ZIP` 다운로드 후, 압축해제 한 파일에 json 붙여넣기**  
 3️⃣ `data_crawler.exe` 실행
 """)
 
-        st.download_button(
-            label="📄 config.json 다운로드",
-            data=json.dumps(config, ensure_ascii=False, indent=2),
-            file_name="config.json",
-            mime="application/json"
+    st.download_button(
+        label="📄 config.json 다운로드",
+        data=json.dumps(config, ensure_ascii=False, indent=2),
+        file_name="config.json",
+        mime="application/json"
         )
+
 
